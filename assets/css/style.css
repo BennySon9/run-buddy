@@ -6,9 +6,10 @@
 
 body {
   font-family: Helvetica, Arial, sans-serif;
-  background-color: #ebeff0;
+  background-color: #39a6b2;
 }
 
+/* header/nav-bar styles start */
 header {
   padding: 20px 35px;
   background-color: #39a6b2;
@@ -18,13 +19,9 @@ header {
 }
 
 header h1 {
-  font-weight: bold;
+  font-weight: bold;;
   font-size: 36px;
   color: #fce138;
-  margin: 0;
-}
-
-header h3 {
   margin: 0;
 }
 
@@ -50,11 +47,10 @@ header nav ul li a {
   font-weight: lighter;
   font-size: 1.55vw;
 }
+/* header/nav-bar styles end */
 
-section {
-  padding: 60px;
-}
 
+/* footer styles start */
 footer {
   background: #fce138;
   width: 100%;
@@ -74,9 +70,10 @@ footer div {
   line-height: 1.5;
   text-align: right;
 }
-s footer a {
+footer a {
   color: #024e76;
 }
+/* footer style ends */
 
 
 /* hero styles starts */
@@ -118,20 +115,8 @@ s footer a {
   margin: 0;
 }
 
-.hero-form label {
-  margin: 0 5px;
-}
-
 .hero-form p {
   margin: 5px 0 15px 0;
-}
-
-.hero-form button {
-  color: #fce138;
-  background-color: #024e76;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
 }
 
 .form-input {
@@ -143,7 +128,41 @@ s footer a {
   width: 100%;
   margin-bottom: 15px;
 }
+
+.hero-form label {
+  margin: 0 5px;
+}
+
+.hero-form button {
+  color: #fce138;
+  background-color: #024e76;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+}
 /* hero styles ends */
+
+
+/* section title style starts */ 
+.section-title {
+  font-size: 55px;
+  color: #024e76;
+  border-bottom: 3px solid;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+
+.primary-border {
+  border-color: #fce138;
+}
+
+.secondary-border {
+  border-color: #39a6b2;
+}
+/* section title style ends */
+
 
 /* what we do styles */
 .intro p {
@@ -157,7 +176,7 @@ s footer a {
 /* what we do styles end */
 
 
-/* what you do styles end */
+/* what you do styles starts */
 .steps {
   background: #fce138;
 }
@@ -179,6 +198,23 @@ s footer a {
   flex: 1 30%;
 }
 
+.step-info {
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.step-img {
+  flex: 1 12%;
+  margin-right: 20px;
+  max-width: 100%;
+}
+
+.step-img img{
+
+}
+
 .step-text {
   flex: 12;
 }
@@ -193,37 +229,7 @@ s footer a {
   line-height: 1.5;
   color: #024e76;
 }
-
-.step-info {
-  flex: 2 70%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.step-img {
-  flex: 1 12%;
-  margin-right: 20px;
-  max-width: 100%;
-}
-
-.section-title {
-  font-size: 55px;
-  color: #024e76;
-  border-bottom: 3px solid;
-  padding-bottom: 20px;
-  text-align: center;
-  margin: 0 auto 35px auto;
-  width: 50%;
-}
-
-.primary-border {
-  border-color: #fce138;
-}
-
-.secondary-border {
-  border-color: #39a6b2;
-}
+/* what you do style ends */
 
 
 /* meet the trainers start */
@@ -276,30 +282,56 @@ s footer a {
   color: #fce138;
 }
 
+.content-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
+}
+
+.contact-info iframe {
+  height: 400px;
+}
+
+.contact-info div {
+  color: white;
+}
+
 .contact-info h3 {
   color: #fce138;
   font-size: 32px;
 }
 
-.contact-info iframe {
-  width: 400px;
-  height: 400px;
-}
-
-.contact-info div {
-  width: 410px;
-  display: inline-block;
-  vertical-align: top;
-  text-align: top;
-  margin: 30px 0 0 60px;
-  color: white;
-}
-
 .contact-info p, .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
+}
+
+.contact-form input, .contact-form textarea {
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.contact-form button {
+  width: 100%;
+  border: none;
+  background: #fce138;
+  color: #024e76;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
 }
 
 .contact-info a {
