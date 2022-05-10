@@ -107,12 +107,12 @@ section {
 
 /* HERO STYLES START */
 .hero {
-  background-image: url("../images/hero-bg.jpg");
-  background-size: cover;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  justify-content: center;
   background-attachment: fixed;
   background-position: 80%;
 }
